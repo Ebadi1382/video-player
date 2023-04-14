@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Custom Video Player</title>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/rastikerdar/vazir-font/v20.1.0/dist/font-face.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+    <div class="myplayer">
+        <video src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
+
+        <div class="myplayer__controls">
+            <div class="controls__progressbar">
+                <input class="controls__progressbar-current" type="range" min="1" max="100" step="1" value="0">
+            </div>
+
+            <div class="controls__btns">
+                <div class="left">
+                    <div class="btns play">
+                        <i class="icon ion-md-play"></i>
+                    </div>
+                    <div class="btns rewind">
+                        <i class="icon ion-md-rewind"></i>
+                    </div>
+                    <div class="btns forward">
+                        <i class="icon ion-md-fastforward"></i>
+                    </div>
+                    <div class="timer">
+                        <span class="currentTime">00:00</span>
+                        <span>/</span>
+                        <span class="videoTime">00:00</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="btns volume">
+                        <i class="icon ion-md-volume-high"></i>
+                        <div class="volume__progress">
+                            <input id="volume_bar" type="range" min="1" max="100" step="1" value="50">
+                        </div>
+                    </div>
+                    <div class="btns fullscreen">
+                        <i class="icon ion-md-expand"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
